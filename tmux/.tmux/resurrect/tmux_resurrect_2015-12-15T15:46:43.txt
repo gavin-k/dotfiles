@@ -1,0 +1,23 @@
+pane	0	0	:~	0	:	0	:/Users/apple	1	zsh	:
+pane	0	1	:~	0	:	0	:/Users/apple	1	zsh	:
+pane	0	2	:~	0	:	0	:/Users/apple	1	zsh	:
+pane	0	3	:/	0	:-	0	:/Users/apple	0	zsh	:
+pane	0	3	:/	0	:-	1	:/	1	zsh	:
+pane	0	4	:~	1	:*	0	:/Users/apple	1	zsh	:
+pane	1	0	:~	0	:	0	:/Users/apple	1	zsh	:
+pane	1	1	:~	1	:*	0	:/Users/apple	1	zsh	:
+pane	1	2	:/usr/local/etc	0	:-	0	:/usr/local/etc	1	zsh	:
+pane	3	0	:~	1	:*	0	:/Users/apple	0	zsh	:
+pane	3	0	:~	1	:*	1	:/Users/apple	1	zsh	:
+pane	3	1	:~	0	:-	0	:/Users/apple	1	zsh	:
+window	0	0	0	:	c53e,172x46,0,0,1
+window	0	1	0	:	c53f,172x46,0,0,2
+window	0	2	0	:	c540,172x46,0,0,3
+window	0	3	0	:-	49d3,172x46,0,0{123x46,0,0,4,48x46,124,0,5}
+window	0	4	1	:*	c543,172x46,0,0,6
+window	1	0	0	:	c544,172x46,0,0,7
+window	1	1	1	:*	c545,172x46,0,0,8
+window	1	2	0	:-	c546,172x46,0,0,9
+window	3	0	1	:*	e053,222x45,0,0{111x45,0,0,22,110x45,112,0,24}
+window	3	1	0	:-	e042,222x45,0,0,23
+state	3	

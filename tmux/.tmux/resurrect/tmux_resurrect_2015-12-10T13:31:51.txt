@@ -1,0 +1,27 @@
+pane	0	0	:~	0	:	0	:/Users/apple	1	zsh	:
+pane	0	1	:~	0	:	0	:/Users/apple	1	zsh	:
+pane	0	2	:~	0	:	0	:/Users/apple	1	zsh	:
+pane	0	3	:php-fpm	0	:-	0	:/Users/apple	0	zsh	:
+pane	0	3	:php-fpm	0	:-	1	:	1	reattach-to-user-namespace	:node /usr/local/bin/socketlog-server
+sudo php-fpm
+pane	0	4	:~	1	:*	0	:/Users/apple	1	zsh	:
+pane	1	0	:~	0	:	0	:/Users/apple	1	zsh	:
+pane	1	1	:~	1	:*	0	:/Users/apple	1	zsh	:
+pane	1	2	:/usr/local/etc	0	:-	0	:/usr/local/etc	1	zsh	:redis-server 127.0.0.1:6379 
+pane	2	0	:~	0	:-	0	:/Users/apple	1	zsh	:
+pane	2	1	:brew-cask	1	:*	0	:/Users/apple	1	ruby	:/System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/bin/ruby -W0 -EUTF-8:UTF-8 /usr/local/Cellar/brew-cask/0.59.0/rubylib/brew-cask-cmd.rb install xquartz
+pane	2	1	:brew-cask	1	:*	1	:/Users/apple	0	zsh	:
+pane	2	1	:brew-cask	1	:*	2	:/Users/apple	0	zsh	:
+pane	2	2	:~	0	:	0	:/Users/apple	1	zsh	:
+window	0	0	0	:	c31d,201x46,0,0,0
+window	0	1	0	:	c31e,201x46,0,0,1
+window	0	2	0	:	c31f,201x46,0,0,2
+window	0	3	0	:-	c650,201x46,0,0{152x46,0,0,3,48x46,153,0,5}
+window	0	4	1	:*	c321,201x46,0,0,4
+window	1	0	0	:	c5c4,173x46,0,0,7
+window	1	1	1	:*	c5c5,173x46,0,0,8
+window	1	2	0	:-	c5c6,173x46,0,0,9
+window	2	0	0	:-	5b8f,156x42,0,0,10
+window	2	1	1	:*	ecee,156x42,0,0{78x42,0,0,11,77x42,79,0[77x21,79,0,13,77x20,79,22,14]}
+window	2	2	0	:	5b91,156x42,0,0,12
+state	2	

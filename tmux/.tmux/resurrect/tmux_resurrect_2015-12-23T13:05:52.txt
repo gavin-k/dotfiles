@@ -1,0 +1,41 @@
+pane	0	0	:~	0	:	0	:/Users/apple	1	zsh	:
+pane	0	1	:~	0	:	0	:/Users/apple	1	zsh	:
+pane	0	2	:~	0	:	0	:/Users/apple	1	zsh	:
+pane	0	3	:/	0	:-	0	:/Users/apple	0	zsh	:
+pane	0	3	:/	0	:-	1	:/	1	zsh	:
+pane	0	4	:~	1	:*	0	:/Users/apple	1	zsh	:
+pane	1	0	:~	0	:	0	:/Users/apple	1	zsh	:
+pane	1	1	:~	1	:*	0	:/Users/apple	1	zsh	:
+pane	1	2	:/usr/local/etc	0	:-	0	:/usr/local/etc	1	zsh	:
+pane	3	0	:..s/api.v3.yii2	0	:	0	:/Users/apple/Documents	0	zsh	:
+pane	3	0	:..s/api.v3.yii2	0	:	1	:/Users/apple/PhpstormProjects/api.v3.yii2	1	zsh	:
+pane	3	1	:..s/api.v3.yii2	0	:	0	:/Users/apple/PhpstormProjects/api.v3.yii2	1	zsh	:
+pane	3	1	:..s/api.v3.yii2	0	:	1	:/Users/apple/PhpstormProjects/api.v3.yii2	0	zsh	:
+pane	3	2	:~	0	:-	0	:/Users/apple	1	zsh	:
+pane	3	3	:~/Documents	1	:*	0	:/Users/apple/Documents	1	zsh	:
+pane	4	0	:~/Downloads	0	:	0	:/Users/apple/mcrypt	0	zsh	:
+pane	4	0	:~/Downloads	0	:	1	:/Users/apple	1	zsh	:
+pane	4	0	:~/Downloads	0	:	2	:/Users/apple/Downloads	0	zsh	:
+pane	4	1	:~	0	:-	0	:/Users/apple	1	zsh	:sudo redis-server /usr/local/etc/redis.conf
+sudo redis-server /usr/local/etc/redis.conf
+sudo redis-server /usr/local/etc/redis.conf
+pane	4	1	:~	0	:-	1	:/Users/apple/PhpstormProjects/api.v3.yii2	0	zsh	:
+pane	4	2	:..api.v3.docker	1	:*	0	:/Users/apple/DockerProjects/api.v3.docker	1	zsh	:
+pane	4	2	:..api.v3.docker	1	:*	1	:/usr/local/etc/nginx/servers	0	zsh	:
+pane	4	2	:..api.v3.docker	1	:*	2	:/Users/apple/PhpstormProjects/api.v3.yii2	0	zsh	:
+window	0	0	0	:	bf7e,186x44,0,0,1
+window	0	1	0	:	bf7f,186x44,0,0,2
+window	0	2	0	:	bf80,186x44,0,0,3
+window	0	3	0	:-	b229,186x44,0,0{130x44,0,0,4,55x44,131,0,5}
+window	0	4	1	:*	bf83,186x44,0,0,6
+window	1	0	0	:	bf84,186x44,0,0,7
+window	1	1	1	:*	bf85,186x44,0,0,8
+window	1	2	0	:-	bf86,186x44,0,0,9
+window	3	0	0	:	8488,186x44,0,0{70x44,0,0,10,115x44,71,0,11}
+window	3	1	0	:	8ceb,186x44,0,0{72x44,0,0,12,113x44,73,0,13}
+window	3	2	0	:-	5ff3,186x44,0,0,14
+window	3	3	1	:*	5ff4,186x44,0,0,15
+window	4	0	0	:	0c90,184x42,0,0{90x42,0,0,16,93x42,91,0[93x18,91,0,17,93x23,91,19,18]}
+window	4	1	0	:-	d294,184x42,0,0{92x42,0,0,19,91x42,93,0,23}
+window	4	2	1	:*	fbcc,184x42,0,0[184x19,0,0,20,184x22,0,20{90x22,0,20,21,93x22,91,20,22}]
+state	4	3

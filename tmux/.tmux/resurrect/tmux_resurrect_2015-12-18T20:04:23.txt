@@ -1,0 +1,28 @@
+pane	0	0	:~	0	:	0	:/Users/apple	1	zsh	:
+pane	0	1	:~	0	:	0	:/Users/apple	1	zsh	:
+pane	0	2	:~	0	:	0	:/Users/apple	1	zsh	:
+pane	0	3	:/	0	:-	0	:/Users/apple	0	zsh	:
+pane	0	3	:/	0	:-	1	:/	1	zsh	:
+pane	0	4	:~	1	:*	0	:/Users/apple	1	zsh	:
+pane	1	0	:~	0	:	0	:/Users/apple	1	zsh	:
+pane	1	1	:~	1	:*	0	:/Users/apple	1	zsh	:
+pane	1	2	:/usr/local/etc	0	:-	0	:/usr/local/etc	1	zsh	:
+pane	3	0	:..s/api.v3.yii2	0	:!	0	:/Users/apple/Documents	0	zsh	:
+pane	3	0	:..s/api.v3.yii2	0	:!	1	:/Users/apple/PhpstormProjects/api.v3.yii2	1	zsh	:
+pane	3	1	:..s/api.v3.yii2	0	:-	0	:/Users/apple/PhpstormProjects/api.v3.yii2	1	zsh	:
+pane	3	1	:..s/api.v3.yii2	0	:-	1	:/Users/apple/PhpstormProjects/api.v3.yii2	0	zsh	:
+pane	3	2	:..ts/components	1	:*	0	:/Users/apple/PhpstormProjects/api.v3.yii2/components/components	1	zsh	:sudo php-fpm
+sudo socketlog-server
+sudo redis-server /usr/local/etc/redis.conf
+window	0	0	0	:	c6be,175x46,0,0,1
+window	0	1	0	:	c6bf,175x46,0,0,2
+window	0	2	0	:	c6c0,175x46,0,0,3
+window	0	3	0	:-	bbe3,175x46,0,0{125x46,0,0,4,49x46,126,0,5}
+window	0	4	1	:*	c6c3,175x46,0,0,6
+window	1	0	0	:	c6c4,175x46,0,0,7
+window	1	1	1	:*	c6c5,175x46,0,0,8
+window	1	2	0	:-	c6c6,175x46,0,0,9
+window	3	0	0	:!	2fe2,196x47,0,0{86x47,0,0,10,109x47,87,0,11}
+window	3	1	0	:-	3845,196x47,0,0{88x47,0,0,12,107x47,89,0,13}
+window	3	2	1	:*	6613,196x47,0,0,14
+state	3	1

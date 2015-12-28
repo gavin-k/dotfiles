@@ -1,0 +1,43 @@
+pane	0	0	:~	0	:	0	:/Users/apple	1	zsh	:
+pane	0	1	:~	0	:	0	:/Users/apple	1	zsh	:
+pane	0	2	:~	0	:	0	:/Users/apple	1	zsh	:
+pane	0	3	:~	0	:-	0	:/Users/apple	0	zsh	:
+pane	0	3	:~	0	:-	1	:/	1	zsh	:
+pane	0	4	:~	1	:*	0	:/Users/apple	1	zsh	:
+pane	1	0	:~	0	:	0	:/Users/apple	1	zsh	:
+pane	1	1	:~	1	:*	0	:/Users/apple	1	zsh	:
+pane	1	2	:/usr/local/etc	0	:-	0	:/usr/local/etc	1	zsh	:
+pane	3	0	:..s/api.v3.yii2	0	:	0	:/Users/apple/Documents	0	zsh	:
+pane	3	0	:..s/api.v3.yii2	0	:	1	:/Users/apple/PhpstormProjects/api.v3.yii2	1	zsh	:
+pane	3	1	:..s/api.v3.yii2	0	:	0	:/Users/apple/PhpstormProjects/api.v3.yii2	1	zsh	:
+pane	3	1	:..s/api.v3.yii2	0	:	1	:/Users/apple/PhpstormProjects/api.v3.yii2	0	zsh	:
+pane	3	2	:~	0	:-	0	:/Users/apple	1	zsh	:
+pane	3	3	:~/Documents	1	:*	0	:/Users/apple/Documents	1	zsh	:
+pane	4	0	:~/Downloads	0	:	0	:/Users/apple/mcrypt	1	zsh	:
+pane	4	0	:~/Downloads	0	:	1	:/Users/apple	0	zsh	:
+pane	4	0	:~/Downloads	0	:	2	:/Users/apple/Downloads	0	zsh	:
+pane	4	1	:..s/api.v3.yii2	0	:	0	:/Users/apple	1	zsh	:
+pane	4	1	:..s/api.v3.yii2	0	:	1	:/Users/apple/PhpstormProjects/api.v3.yii2	0	zsh	:
+pane	4	2	:~	0	:-	0	:/Users/apple	1	zsh	:
+pane	4	3	:..s/api.v3.yii2	1	:*	0	:/Users/apple/PhpstormProjects/api.v3.yii2	1	docker	:sudo php-fpm
+sudo redis-server /usr/local/etc/redis.conf
+node /usr/local/bin/socketlog-server
+docker exec -it 1922 bash
+pane	4	3	:..s/api.v3.yii2	1	:*	1	:/Users/apple/PhpstormProjects/api.v3.yii2	0	zsh	:
+window	0	0	0	:	b05e,217x50,0,0,1
+window	0	1	0	:	b05f,217x50,0,0,2
+window	0	2	0	:	b060,217x50,0,0,3
+window	0	3	0	:-	06a6,217x50,0,0{146x50,0,0,4,70x50,147,0,5}
+window	0	4	1	:*	b063,217x50,0,0,6
+window	1	0	0	:	b064,217x50,0,0,7
+window	1	1	1	:*	b065,217x50,0,0,8
+window	1	2	0	:-	b066,217x50,0,0,9
+window	3	0	0	:	b326,217x50,0,0{86x50,0,0,10,130x50,87,0,11}
+window	3	1	0	:	bc21,217x50,0,0{88x50,0,0,12,128x50,89,0,13}
+window	3	2	0	:-	5863,217x50,0,0,14
+window	3	3	1	:*	5864,217x50,0,0,15
+window	4	0	0	:	a07c,208x41,0,0{83x41,0,0,16,124x41,84,0[124x22,84,0,17,124x18,84,23,18]}
+window	4	1	0	:	b847,208x41,0,0{85x41,0,0,19,122x41,86,0,20}
+window	4	2	0	:-	d980,208x41,0,0,21
+window	4	3	1	:*	1c07,208x41,0,0[208x18,0,0,24,208x22,0,19,25]
+state	4	3

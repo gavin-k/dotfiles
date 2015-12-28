@@ -1,0 +1,34 @@
+pane	0	0	:~	0	:	0	:/Users/apple	1	zsh	:
+pane	0	1	:~	0	:	0	:/Users/apple	1	zsh	:
+pane	0	2	:~	0	:	0	:/Users/apple	1	zsh	:
+pane	0	3	:/	0	:-	0	:/Users/apple	0	zsh	:
+pane	0	3	:/	0	:-	1	:/	1	zsh	:
+pane	0	4	:~	1	:*	0	:/Users/apple	1	zsh	:
+pane	1	0	:~	0	:	0	:/Users/apple	1	zsh	:
+pane	1	1	:~	1	:*	0	:/Users/apple	1	zsh	:
+pane	1	2	:/usr/local/etc	0	:-	0	:/usr/local/etc	1	zsh	:
+pane	2	0	:vim	0	:	0	:/Users/apple/GithubProject/gavin-k.github.io/_posts	0	vim	:vim 2015-12-04-Developer-Checklist.md
+pane	2	0	:vim	0	:	1	:/Users/apple/PhpstormProjects/api.v3.yii2/.git	1	zsh	:
+pane	2	0	:vim	0	:	2	:/	0	zsh	:
+pane	2	1	:..s/api.v3.yii2	0	:	0	:/Users/apple/.ssh	1	zsh	:
+pane	2	1	:..s/api.v3.yii2	0	:	1	:/Users/apple	0	zsh	:
+pane	2	1	:..s/api.v3.yii2	0	:	2	:/Users/apple/PhpstormProjects/api.v3.yii2	0	zsh	:
+pane	2	2	:..hub.io/_posts	1	:*	0	:/Users/apple/GithubProject/SocketLog/php	0	zsh	:
+pane	2	2	:..hub.io/_posts	1	:*	1	:	0	reattach-to-user-namespace	:node /usr/local/bin/socketlog-server
+sudo php-fpm
+pane	2	2	:..hub.io/_posts	1	:*	2	:/Users/apple/GithubProject/gavin-k.github.io/_posts	0	zsh	:sudo redis-server
+pane	2	2	:..hub.io/_posts	1	:*	3	:/Users/apple	1	ssh	:ssh sysop@web1
+pane	2	3	:..nginx/servers	0	:-	0	:/usr/local/etc/nginx/servers	1	zsh	:
+window	0	0	0	:	c53e,172x46,0,0,1
+window	0	1	0	:	c53f,172x46,0,0,2
+window	0	2	0	:	c540,172x46,0,0,3
+window	0	3	0	:-	49d3,172x46,0,0{123x46,0,0,4,48x46,124,0,5}
+window	0	4	1	:*	c543,172x46,0,0,6
+window	1	0	0	:	c544,172x46,0,0,7
+window	1	1	1	:*	c545,172x46,0,0,8
+window	1	2	0	:-	c546,172x46,0,0,9
+window	2	0	0	:	0c46,222x45,0,0{99x45,0,0,10,122x45,100,0[122x16,100,0,11,122x28,100,17,12]}
+window	2	1	0	:	1226,222x45,0,0{101x45,0,0,13,120x45,102,0[120x20,102,0,14,120x24,102,21,15]}
+window	2	2	1	:*	3aed,222x45,0,0{72x45,0,0[72x22,0,0,16,72x22,0,23{36x22,0,23,19,35x22,37,23,20}],149x45,73,0,17}
+window	2	3	0	:-	6047,222x45,0,0,18
+state	2	1

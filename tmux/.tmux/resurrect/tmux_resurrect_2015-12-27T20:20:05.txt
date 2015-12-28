@@ -1,0 +1,33 @@
+pane	0	0	:~	1	:*	0	:/Users/apple	1	zsh	:
+pane	1	0	:~	0	:	0	:/Users/apple	1	zsh	:
+pane	1	1	:~	1	:*	0	:/Users/apple	1	zsh	:
+pane	1	2	:/usr/local/etc	0	:-	0	:/usr/local/etc	1	zsh	:
+pane	3	0	:..s/api.v3.yii2	0	:	0	:/Users/apple/Documents	0	zsh	:
+pane	3	0	:..s/api.v3.yii2	0	:	1	:/Users/apple/PhpstormProjects/api.v3.yii2	1	zsh	:
+pane	3	1	:..s/api.v3.yii2	0	:	0	:/Users/apple/PhpstormProjects/api.v3.yii2	1	zsh	:
+pane	3	1	:..s/api.v3.yii2	0	:	1	:/Users/apple/PhpstormProjects/api.v3.yii2	0	zsh	:
+pane	3	2	:~	0	:-	0	:/Users/apple	1	zsh	:
+pane	3	3	:~/Documents	1	:*	0	:/Users/apple/Documents	1	zsh	:
+pane	4	0	:~	0	:	0	:/Users/apple/mcrypt	1	zsh	:
+pane	4	0	:~	0	:	1	:/Users/apple	0	zsh	:
+pane	4	0	:~	0	:	2	:/Users/apple/Downloads	0	zsh	:
+pane	4	1	:..s/api.v3.yii2	0	:	0	:/Users/apple	1	zsh	:
+pane	4	1	:..s/api.v3.yii2	0	:	1	:/Users/apple/PhpstormProjects/api.v3.yii2	0	zsh	:
+pane	4	2	:~	0	:-	0	:/Users/apple	1	zsh	:
+pane	4	3	:~/Downloads	1	:*	0	:/Users/apple/GithubProject/git-flow-practical	0	zsh	:
+pane	4	3	:~/Downloads	1	:*	1	:/Users/apple/Downloads	1	zsh	:sudo php-fpm
+node /usr/local/bin/socketlog-server
+sudo redis-server /usr/local/etc/redis.conf
+window	0	0	1	:*	b37e,144x32,0,0,1
+window	1	0	0	:	b37f,144x32,0,0,2
+window	1	1	1	:*	b380,144x32,0,0,3
+window	1	2	0	:-	b381,144x32,0,0,4
+window	3	0	0	:	165d,144x32,0,0{49x32,0,0,5,94x32,50,0,6}
+window	3	1	0	:	1726,144x32,0,0{51x32,0,0,7,92x32,52,0,8}
+window	3	2	0	:-	b386,144x32,0,0,9
+window	3	3	1	:*	59ef,144x32,0,0,10
+window	4	0	0	:	cf47,174x33,0,0{64x33,0,0,11,109x33,65,0[109x20,65,0,12,109x12,65,21,13]}
+window	4	1	0	:	b045,174x33,0,0{66x33,0,0,14,107x33,67,0,15}
+window	4	2	0	:-	5c55,174x33,0,0,16
+window	4	3	1	:*	250f,174x33,0,0[174x17,0,0,17,174x15,0,18,18]
+state	4	3

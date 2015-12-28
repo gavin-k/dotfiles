@@ -1,0 +1,39 @@
+pane	0	0	:~	0	:	0	:/Users/apple	1	zsh	:
+pane	0	1	:~	0	:	0	:/Users/apple	1	zsh	:
+pane	0	2	:~	0	:	0	:/Users/apple	1	zsh	:
+pane	0	3	:/	0	:-	0	:/Users/apple	0	zsh	:
+pane	0	3	:/	0	:-	1	:/	1	zsh	:
+pane	0	4	:~	1	:*	0	:/Users/apple	1	zsh	:
+pane	1	0	:~	0	:	0	:/Users/apple	1	zsh	:
+pane	1	1	:~	1	:*	0	:/Users/apple	1	zsh	:
+pane	1	2	:/usr/local/etc	0	:-	0	:/usr/local/etc	1	zsh	:
+pane	3	0	:..s/api.v3.yii2	0	:	0	:/Users/apple/Documents	0	zsh	:
+pane	3	0	:..s/api.v3.yii2	0	:	1	:/Users/apple/PhpstormProjects/api.v3.yii2	1	zsh	:
+pane	3	1	:..s/api.v3.yii2	0	:	0	:/Users/apple/PhpstormProjects/api.v3.yii2	1	zsh	:
+pane	3	1	:..s/api.v3.yii2	0	:	1	:/Users/apple/PhpstormProjects/api.v3.yii2	0	zsh	:
+pane	3	2	:~	0	:-	0	:/Users/apple	1	zsh	:
+pane	3	3	:~/Documents	1	:*	0	:/Users/apple/Documents	1	zsh	:
+pane	4	0	:sysop@web1	1	:*	0	:/Users/apple/Documents	1	docker	:/bin/bash ./start-vmwarefusion.sh
+pane	4	0	:sysop@web1	1	:*	1	:/Users/apple/Desktop	0	ssh	:sudo php-fpm
+node /usr/local/bin/socketlog-server
+redis-server 127.0.0.1:6379 
+ssh sysop@web1
+pane	4	0	:sysop@web1	1	:*	2	:/Users/apple/Downloads	0	zsh	:
+pane	4	1	:~/Desktop	0	:	0	:/Users/apple/Desktop	1	zsh	:
+pane	4	2	:~/Desktop	0	:-	0	:/Users/apple/Desktop	1	zsh	:
+window	0	0	0	:	c53e,172x46,0,0,1
+window	0	1	0	:	c53f,172x46,0,0,2
+window	0	2	0	:	c540,172x46,0,0,3
+window	0	3	0	:-	49d3,172x46,0,0{123x46,0,0,4,48x46,124,0,5}
+window	0	4	1	:*	c543,172x46,0,0,6
+window	1	0	0	:	c544,172x46,0,0,7
+window	1	1	1	:*	c545,172x46,0,0,8
+window	1	2	0	:-	c546,172x46,0,0,9
+window	3	0	0	:	4c51,172x46,0,0{63x46,0,0,10,108x46,64,0,11}
+window	3	1	0	:	54b4,172x46,0,0{65x46,0,0,12,106x46,66,0,13}
+window	3	2	0	:-	62d3,172x46,0,0,14
+window	3	3	1	:*	62d4,172x46,0,0,15
+window	4	0	1	:*	1e03,212x46,0,0[212x14,0,0,16,212x14,0,15,17,212x16,0,30,18]
+window	4	1	0	:	6228,212x46,0,0,19
+window	4	2	0	:-	e21f,212x46,0,0,20
+state	4	3

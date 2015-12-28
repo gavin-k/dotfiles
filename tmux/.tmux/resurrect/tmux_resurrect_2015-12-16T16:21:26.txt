@@ -1,0 +1,25 @@
+pane	0	0	:zsh	0	:	0	:/Users/apple	1	zsh	:zsh -f /Users/apple/.oh-my-zsh/tools/check_for_upgrade.sh
+pane	0	1	:~	0	:	0	:/Users/apple	1	zsh	:zsh -f /Users/apple/.oh-my-zsh/tools/check_for_upgrade.sh
+pane	0	2	:~	0	:	0	:/Users/apple	1	zsh	:zsh -f /Users/apple/.oh-my-zsh/tools/check_for_upgrade.sh
+pane	0	3	:/	0	:-	0	:/Users/apple	0	zsh	:zsh -f /Users/apple/.oh-my-zsh/tools/check_for_upgrade.sh
+pane	0	3	:/	0	:-	1	:/	1	zsh	:zsh -f /Users/apple/.oh-my-zsh/tools/check_for_upgrade.sh
+pane	0	4	:~	1	:*	0	:/Users/apple	1	zsh	:zsh -f /Users/apple/.oh-my-zsh/tools/check_for_upgrade.sh
+pane	1	0	:~	0	:	0	:/Users/apple	1	zsh	:zsh -f /Users/apple/.oh-my-zsh/tools/check_for_upgrade.sh
+pane	1	1	:~	1	:*	0	:/Users/apple	1	zsh	:zsh -f /Users/apple/.oh-my-zsh/tools/check_for_upgrade.sh
+pane	1	2	:/usr/local/etc	0	:-	0	:/usr/local/etc	1	zsh	:zsh -f /Users/apple/.oh-my-zsh/tools/check_for_upgrade.sh
+pane	3	0	:~/Documents	0	:-	0	:/Users/apple/Documents	1	zsh	:
+pane	3	0	:~/Documents	0	:-	1	:/Users/apple	0	zsh	:node /usr/local/bin/socketlog-server
+sudo redis-server
+sudo php-fpm
+pane	3	1	:~	1	:*	0	:/Users/apple	1	zsh	:
+window	0	0	0	:	c65e,80x29,0,0,1
+window	0	1	0	:	c65f,80x29,0,0,2
+window	0	2	0	:	c660,80x29,0,0,3
+window	0	3	0	:-	a549,80x29,0,0{77x29,0,0,4,2x29,78,0,5}
+window	0	4	1	:*	c663,80x29,0,0,6
+window	1	0	0	:	c664,80x29,0,0,7
+window	1	1	1	:*	c665,80x29,0,0,8
+window	1	2	0	:-	c666,80x29,0,0,9
+window	3	0	0	:-	7bad,173x46,0,0{84x46,0,0,10,88x46,85,0,11}
+window	3	1	1	:*	6311,173x46,0,0,12
+state	3	1
