@@ -1,6 +1,6 @@
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/apple/.oh-my-zsh
-export EDITOR="vim"
+export EDITOR="emacs"
 setopt AUTO_CD
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -55,7 +55,6 @@ plugins=(git)
 
 # User configuration
 
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/home/apple/.composer/vendor/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
@@ -84,7 +83,17 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-export PATH="/usr/local/sbin:$PATH"
 
 # config find the current working directory of the active pane.
 PS1="$PS1"'$([ -n "$TMUX" ] && tmux setenv TMUXPWD_$(tmux display -p "#D" | tr -d %) "$PWD")'
+
+
+
+alias e='emacsclient -t'
+alias ec='emacsclient -c'
+# alias vim='emacsclient -t'
+# alias vi='emacsclient -t'
+
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/home/apple/.composer/vendor/bin"
+export PATH="$PATH:/usr/local/opt/go/libexec/bin"
+export PATH="/usr/local/sbin:$PATH"

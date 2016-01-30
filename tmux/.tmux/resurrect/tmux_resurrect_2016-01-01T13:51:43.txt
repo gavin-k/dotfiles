@@ -1,0 +1,37 @@
+pane	0	0	:~	1	:*	0	:/Users/apple	1	zsh	:
+pane	1	0	:~	0	:	0	:/Users/apple	1	zsh	:
+pane	1	1	:~	1	:*	0	:/Users/apple	1	zsh	:
+pane	1	2	:/usr/local/etc	0	:-	0	:/usr/local/etc	1	zsh	:
+pane	3	0	:..s/api.v3.yii2	0	:	0	:/Users/apple/Documents	0	zsh	:
+pane	3	0	:..s/api.v3.yii2	0	:	1	:/Users/apple/PhpstormProjects/api.v3.yii2	1	zsh	:
+pane	3	1	:..s/api.v3.yii2	0	:	0	:/Users/apple/PhpstormProjects/api.v3.yii2	1	zsh	:
+pane	3	1	:..s/api.v3.yii2	0	:	1	:/Users/apple/PhpstormProjects/api.v3.yii2	0	zsh	:
+pane	3	2	:~	0	:-	0	:/Users/apple	1	zsh	:
+pane	3	3	:~/Documents	1	:*	0	:/Users/apple/Documents	1	zsh	:
+pane	4	0	:~/Downloads	0	:	0	:/Users/apple	1	zsh	:
+pane	4	0	:~/Downloads	0	:	1	:/Users/apple/Downloads	0	zsh	:
+pane	4	1	:..s/api.v3.yii2	0	:	0	:/Users/apple	1	zsh	:
+pane	4	1	:..s/api.v3.yii2	0	:	1	:/Users/apple/PhpstormProjects/api.v3.yii2	0	zsh	:
+pane	4	2	:~	0	:-	0	:/Users/apple	1	zsh	:
+pane	4	3	:~/GithubProject	1	:*	0	:/Users/apple	1	zsh	:
+pane	4	3	:~/GithubProject	1	:*	1	:/Users/apple/GithubProject	0	zsh	:
+pane	7	0	:exit	0	:	0	:/Users/apple/PhpstormProjects/api.v3.yii2	1	vim	:vim /Users/apple/.vimrc
+pane	7	1	:brew	0	:-	0	:/Users/apple/GithubProject/git-flow-practical	1	ruby	:/System/Library/Frameworks/Ruby.framework/Versions/Current/usr/bin/ruby -W0 /usr/local/Library/brew.rb install pianobar
+emacs README.md
+pane	7	2	:..low-practical	1	:*	0	:/Users/apple/GithubProject/git-flow-practical	1	zsh	:
+window	0	0	1	:*	c23e,174x45,0,0,1
+window	1	0	0	:	c23f,174x45,0,0,2
+window	1	1	1	:*	c240,174x45,0,0,3
+window	1	2	0	:-	c241,174x45,0,0,4
+window	3	0	0	:	a46d,174x45,0,0{64x45,0,0,5,109x45,65,0,6}
+window	3	1	0	:	b632,174x45,0,0{66x45,0,0,7,107x45,67,0,8}
+window	3	2	0	:-	c246,174x45,0,0,9
+window	3	3	1	:*	614f,174x45,0,0,10
+window	4	0	0	:	6e22,174x45,0,0{64x45,0,0,11,109x45,65,0,12}
+window	4	1	0	:	7685,174x45,0,0{66x45,0,0,13,107x45,67,0,14}
+window	4	2	0	:-	6154,174x45,0,0,15
+window	4	3	1	:*	044e,174x45,0,0[174x23,0,0,16,174x21,0,24,17]
+window	7	0	0	:	6157,174x45,0,0,18
+window	7	1	0	:-	e14f,174x45,0,0,20
+window	7	2	1	:*	e150,174x45,0,0,21
+state	7	4
