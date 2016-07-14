@@ -93,7 +93,33 @@ alias e='emacsclient -t'
 alias ec='emacsclient -c'
 # alias vim='emacsclient -t'
 # alias vi='emacsclient -t'
+alias c='composer'
 
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/home/apple/.composer/vendor/bin"
-export PATH="$PATH:/usr/local/opt/go/libexec/bin"
-export PATH="/usr/local/sbin:$PATH"
+source /Users/apple/.profile
+
+function aws-instances-describe() {
+    zparseopts -D -E -A opts -- o: t: s:
+    output=${opts[-o]:-"table"}
+    tag_name=${opts[-t]:-"Name"}
+    state=${opts[-s]:-"running"}
+
+    name=${1}
+    query=(
+        "Reservations[].Instances[]"
+        ".{"
+        "Name             : Tags[?Key == \`Name\`].Value | [0],"
+        "State            : State.Name,"
+        "LaunchTime       : LaunchTime,"
+        "InstanceId       : InstanceId,"
+        "PrivateIpAddress : PrivateIpAddress,"
+        "PublicIpAddress  : PublicIpAddress,"
+        "ImageId          : ImageId,"
+        "InstanceType     : InstanceType"
+        "}"
+    )
+
+    aws --output ${output} \
+        ec2 describe-instances \
+        --filters "Name=tag:${tag_name},Values=*${name}*" "Name=instance-state-name,Values=${state}" \
+        --query "${query}"
+}
