@@ -1,0 +1,10 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_1='/Users/apple/PhpstormProjects/migrate.v4'
+let g:netrw_dirhist_2='/Users/apple/PhpstormProjects/migrate.v4/tests'
+let g:netrw_dirhist_3='/Users/apple/PhpstormProjects/migrate.v4'
+let g:netrw_dirhist_4='/Users/apple/PhpstormProjects/migrate.v4/app'
+let g:netrw_dirhist_5='/Users/apple/PhpstormProjects/migrate.v4/app/Events'
+let g:netrw_dirhist_6='/Users/apple/PhpstormProjects'
+let g:netrw_dirhist_7='/Users/apple/PhpstormProjects/api.search.behinders.com'
+let g:netrw_dirhist_8='/Users/apple/PhpstormProjects/api.search.behinders.com/.idea'

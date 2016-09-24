@@ -1,0 +1,18 @@
+# Grid
+bind esc:ctrl grid
+
+# Test Cases
+source .slate.test if_exists
+
+# Application focus 
+bind y:alt focus 'PhpStorm'
+bind g:alt focus 'Google Chrome'
+bind w:alt focus 'WeChat'
+bind e:alt focus 'Evernote'
+bind q:alt focus 'QQ'
+
+bind a:alt focus 'Postman'
+bind s:alt focus 'DataGrip'
+# bind t:alt focus 'iTerm'
+bind d:alt focus 'Dash'
+bind z:alt focus 'Sublime Text'

@@ -123,3 +123,9 @@ function aws-instances-describe() {
         --filters "Name=tag:${tag_name},Values=*${name}*" "Name=instance-state-name,Values=${state}" \
         --query "${query}"
 }
+if [ -f $GOPATH/src/github.com/zquestz/s/autocomplete/s-completion.bash ]; then
+        . $GOPATH/src/github.com/zquestz/s/autocomplete/s-completion.bash
+fi
+
+# 为了配置 phpbrew
+[[ -e ~/.phpbrew/bashrc ]] && source ~/.phpbrew/bashrc
