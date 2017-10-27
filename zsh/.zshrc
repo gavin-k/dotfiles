@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/apple/.oh-my-zsh
+export ZSH=$HOME/.oh-my-zsh
 export EDITOR="emacs"
 setopt AUTO_CD
 # Set name of the theme to load.
@@ -51,7 +51,8 @@ ZSH_THEME="agnoster"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+#plugins=(git)
+plugins=(git osx git-flow laravel5 yii2 nmap svn tmux)
 
 # User configuration
 
@@ -87,7 +88,7 @@ source $ZSH/oh-my-zsh.sh
 # config find the current working directory of the active pane.
 PS1="$PS1"'$([ -n "$TMUX" ] && tmux setenv TMUXPWD_$(tmux display -p "#D" | tr -d %) "$PWD")'
 
-
+#archey --offline # 查看系统中的简要信息
 
 alias e='emacsclient -t'
 alias ec='emacsclient -c'
@@ -95,37 +96,14 @@ alias ec='emacsclient -c'
 # alias vi='emacsclient -t'
 alias c='composer'
 
-source /Users/apple/.profile
+alias canary="/Applications/Google\ Chrome\ Canary.app/Contents/MacOS/Google\ Chrome\ Canary"
+alias MathKernel="/Applications/Mathematica.app/Contents/MacOS/MathKernel"
 
-function aws-instances-describe() {
-    zparseopts -D -E -A opts -- o: t: s:
-    output=${opts[-o]:-"table"}
-    tag_name=${opts[-t]:-"Name"}
-    state=${opts[-s]:-"running"}
+source $HOME/.profile
 
-    name=${1}
-    query=(
-        "Reservations[].Instances[]"
-        ".{"
-        "Name             : Tags[?Key == \`Name\`].Value | [0],"
-        "State            : State.Name,"
-        "LaunchTime       : LaunchTime,"
-        "InstanceId       : InstanceId,"
-        "PrivateIpAddress : PrivateIpAddress,"
-        "PublicIpAddress  : PublicIpAddress,"
-        "ImageId          : ImageId,"
-        "InstanceType     : InstanceType"
-        "}"
-    )
-
-    aws --output ${output} \
-        ec2 describe-instances \
-        --filters "Name=tag:${tag_name},Values=*${name}*" "Name=instance-state-name,Values=${state}" \
-        --query "${query}"
-}
-if [ -f $GOPATH/src/github.com/zquestz/s/autocomplete/s-completion.bash ]; then
-        . $GOPATH/src/github.com/zquestz/s/autocomplete/s-completion.bash
-fi
 
 # 为了配置 phpbrew
-[[ -e ~/.phpbrew/bashrc ]] && source ~/.phpbrew/bashrc
+#[[ -e ~/.phpbrew/bashrc ]] && source ~/.phpbrew/bashrc
+
+export PATH="/usr/local/opt/qt/bin:$PATH"
+
