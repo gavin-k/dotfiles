@@ -1,316 +1,180 @@
-set nocompatible              " be iMproved, required
-filetype off                  " required
+set nocompatible " not vi compatible
 
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-" alternatively, pass a path where Vundle should install plugins
-"call vundle#begin('~/some/path/here')
+"------------------
+" Syntax and indent
+"------------------
+syntax on " turn on syntax highlighting
+set showmatch " show matching braces when text indicator is over them
 
-" let Vundle manage Vundle, required
-Plugin 'VundleVim/Vundle.vim'
+" highlight current line, but only in active window
+augroup CursorLineOnlyInActiveWindow
+    autocmd!
+    autocmd VimEnter,WinEnter,BufWinEnter * setlocal cursorline
+    autocmd WinLeave * setlocal nocursorline
+augroup END
 
-Plugin 'Valloric/YouCompleteMe'
-let g:ycm_min_num_of_chars_for_completion = 1
-let g:ycm_semantic_triggers =  {
-  \   'c' : ['->', '.'],
-  \   'objc' : ['->', '.', 're!\[[_a-zA-Z]+\w*\s', 're!^\s*[^\W\d]\w*\s',
-  \             're!\[.*\]\s'],
-  \   'ocaml' : ['.', '#'],
-  \   'cpp,objcpp' : ['->', '.', '::'],
-  \   'perl' : ['->'],
-  \   'php' : ['->', '::'],
-  \   'cs,java,javascript,typescript,d,python,perl6,scala,vb,elixir,go' : ['.'],
-  \   'ruby' : ['.', '::'],
-  \   'lua' : ['.', ':'],
-  \   'erlang' : [':'],
-  \ }
-
-let g:ycm_filetype_blacklist = {
-      \ 'tagbar' : 1,
-      \ 'qf' : 1,
-      \ 'notes' : 1,
-      \ 'markdown' : 1,
-      \ 'unite' : 1,
-      \ 'text' : 1,
-      \ 'vimwiki' : 1,
-      \ 'gitcommit' : 1,
-      \}
-
-
-Bundle 'Shougo/unite.vim'
-
-
-Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
-
-Plugin 'ctrlpvim/ctrlp.vim'
-let g:ctrlp_custom_ignore = {
-  \ 'dir':  '\v[\/]\.(git|hg|svn)$',
-  \ 'file': '\v\.(exe|so|dll)$',
-  \ 'link': 'some_bad_symbolic_links',
-  \ }
-set wildignore+=*/tmp/*,*.so,*.swp,*.zip     " MacOSX/Linux
-set wildignore+=*\\tmp\\*,*.swp,*.zip,*.exe  " Windows
-
-
-Plugin 'nanotech/jellybeans.vim'
-
-Plugin 'zenorocha/dracula-theme', {'rtp': 'vim/'}
-
-Plugin 'dracula/vim'
-
-Plugin 'altercation/vim-colors-solarized'
-
-Plugin 'mhinz/vim-signify'
-
-Plugin 'airblade/vim-gitgutter'
-
-Plugin 'majutsushi/tagbar'
-
-Plugin 'scrooloose/syntastic'
-
-Plugin 'scrooloose/nerdtree'
-
-Plugin 'StanAngeloff/php.vim'
-
-Plugin 'pearofducks/ansible-vim'
-
-""""""""""""""""""""""""""
-"""" javascript
-"""""""""""""""""""""""""""
-"Plugin 'pangloss/vim-javascript'
-"Plugin 'othree/javascript-libraries-syntax.vim'
-"Plugin 'burnettk/vim-angular'
-
-Plugin 'davidhalter/jedi-vim'
-
-
-Plugin 'Xuyuanp/nerdtree-git-plugin'
-
-Plugin 'easymotion/vim-easymotion'
-" Gif config
-map  / <Plug>(easymotion-sn)
-omap / <Plug>(easymotion-tn)
-
-let g:EasyMotion_smartcase = 1
-
-" These `n` & `N` mappings are options. You do not have to map `n` & `N` to
-" EasyMotion.
-" Without these mappings, `n` & `N` works fine. (These mappings just provide
-" different highlight method and have some other features )
-map  n <Plug>(easymotion-next)
-map  N <Plug>(easymotion-prev)
-
-" Gif config
-map <Leader>l <Plug>(easymotion-lineforward)
-map <Leader>j <Plug>(easymotion-j)
-map <Leader>k <Plug>(easymotion-k)
-map <Leader>h <Plug>(easymotion-linebackward)
-"
-let g:EasyMotion_startofline = 0 " keep cursor column when JK motion
-
-
-Plugin 'junegunn/vim-easy-align'
-" Start interactive EasyAlign in visual mode (e.g. vipga)
-xmap ga <Plug>(EasyAlign)
-
-" Start interactive EasyAlign for a motion/text object (e.g. gaip)
-nmap ga <Plug>(EasyAlign)
-
-Plugin 'Yggdroot/indentLine'
-
-
-Plugin 'honza/vim-snippets'
-" assuming you want to use snipmate snippet engine
-"ActivateAddons vim-snippets snipmate phpdd
-
-
-Plugin 'jceb/vim-orgmode'
-
-
-"Plugin 'itchyny/calendar.vim'
-
-"Plugin 'othree/html5.vim'
-
-"Plugin 'groenewege/vim-less'
-
-Plugin 'ryanoasis/vim-devicons'
-
-"Plugin 'skammer/vim-css-color'
-
-Plugin 'fatih/vim-go'
-
-
-Plugin 'xwsoul/vim-zephir'
-
-Plugin 'vim-scripts/DrawIt'
-
-Plugin 'saltstack/salt-vim'
-
-" All of your Plugins must be added before the following line
-call vundle#end()            " required
-filetype plugin indent on    " required
-" To ignore plugin indent changes, instead use:
-"filetype plugin on
-"
-" Brief help
-" :PluginList       - lists configured plugins
-" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
-" :PluginSearch foo - searches for foo; append `!` to refresh local cache
-" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
-"
-" see :h vundle for more details or wiki for FAQ
-" Put your non-Plugin stuff after this line
-"
-
-" airline settings
-set laststatus=2
-set t_Co=256
-let g:airline_powerline_fonts=1
-set encoding=utf8
-let g:airline#extensions#tabline#enabled=1
-let g:airline_theme='solarized'
-if !exists('g:airline_symbols')
-        let g:airline_symbols = {}
+" vim can autodetect this based on $TERM (e.g. 'xterm-256color')
+" but it can be set to force 256 colors
+" set t_Co=256
+if has('gui_running')
+    colorscheme solarized
+    let g:lightline = {'colorscheme': 'solarized'}
+elseif &t_Co < 256
+    colorscheme default
+    set nocursorline " looks bad in this mode
+else
+    set background=dark
+    let g:solarized_termcolors=256 " instead of 16 color with mapping in terminal
+    "colorscheme solarized " solarized color ugly on iTerm2 Transparency
+    " customized colors
+    highlight SignColumn ctermbg=234
+    highlight StatusLine cterm=bold ctermfg=245 ctermbg=235
+    highlight StatusLineNC cterm=bold ctermfg=245 ctermbg=235
+    let g:lightline = {'colorscheme': 'dark'}
+    highlight SpellBad cterm=underline
+    " patches
+     highlight CursorLineNr cterm=NONE
 endif
 
-" unicode symbols
-let g:airline_left_sep = '»'
-let g:airline_left_sep = '▶'
-let g:airline_right_sep = '«'
-let g:airline_right_sep = '◀'
-let g:airline_symbols.linenr = '␊'
-let g:airline_symbols.linenr = '␤'
-let g:airline_symbols.linenr = '¶'
-let g:airline_symbols.branch = '⎇'
-let g:airline_symbols.paste = 'ρ'
-let g:airline_symbols.paste = 'Þ'
-let g:airline_symbols.paste = '∥'
-let g:airline_symbols.whitespace = 'Ξ'
 
-" airline symbols
-let g:airline_left_sep = ''
-let g:airline_left_alt_sep = ''
-let g:airline_right_sep = ''
-let g:airline_right_alt_sep = ''
-let g:airline_symbols.branch = ''
-let g:airline_symbols.readonly = ''
-let g:airline_symbols.linenr = ''
-
-"语法检查
-"php
-let g:syntastic_php_checkers = ['php', 'phpcs', 'phpmd']
-
-"python
-let g:syntastic_python_checkers = ['pylint']
-
-
-"tagbar
-let g:tagbar_iconchars = ['▸', '▾']
-let g:tagbar_type_php = {'ctagstype' : 'php', 'kinds' : ['c:classes', 'f:functions'  ] }
-nmap <F8> :TagbarToggle<CR>
-
-syntax on
-set nu
-set nowrap
+filetype plugin indent on " enable file type detection
 set autoindent
-set smartindent
-set cindent
 
-set cursorline
-set ruler
+"---------------------
+"" Basic editing config
+"---------------------
+set shortmess+=I " disable startup message
+set nu " number lines
+set rnu " relative line numbering
+set incsearch " incremental search (as string is being typed)
+set hls " highlight search 
+set listchars=tab:>>,nbsp:~ " set list to see tabs and non-breakable spaces
+set lbr " line break
+set scrolloff=5 " show lines above and below cursor (when possible)
+set noshowmode " hide mode
+set laststatus=2
+set backspace=indent,eol,start " allow backspacing over everything
+set timeout timeoutlen=1000 ttimeoutlen=100 " fix slow 0 inserts
+set lazyredraw " skip redrawing screen in some cases
+set autochdir " automatically set current directory to directory of last opened file
+set hidden " allow auto-hiding of edited buffers
+set history=8192 " more history
+set nojoinspaces " suppress inserting two spaces between sentences
+" use 4 spaces instead of tabs during formatting
 set expandtab
 set tabstop=4
 set shiftwidth=4
-
-set nobackup
-set showcmd
-
+set softtabstop=4
+" smart case-sensitive search
 set ignorecase
-set incsearch
-set nohlsearch
-
-
-set showmatch
-set history=1000
-set autoread
-set ambiwidth=double
-set listchars=tab:>-,trail:-
-
-set backspace=2
-set background=dark
-colorscheme jellybeans
-"color dracula
-"colorscheme solarized
-
-set foldenable
-set foldmethod=marker
-
-
-set updatetime=500
-autocmd CursorHold * silent! exe printf('match incsearch /\<%s\>/', expand('<cword>'))
-
-"自动打开 tagBar
-"autocmd VimEnter * nested :call tagbar#autoopen(1)
-
-"自动打开 NERDTree
-"autocmd vimenter * NERDTree
-nmap <F10> :NERDTreeToggle<CR>
-wincmd w
-autocmd VimEnter * wincmd w
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
-let g:NERDTreeIndicatorMapCustom = {
-    \ "Modified"  : "✹",
-    \ "Staged"    : "✚",
-    \ "Untracked" : "✭",
-    \ "Renamed"   : "➜",
-    \ "Unmerged"  : "═",
-    \ "Deleted"   : "✖",
-    \ "Dirty"     : "✗",
-    \ "Clean"     : "✔︎",
-    \ "Unknown"   : "?"
-    \ }
-
-
-if has("autocmd")
-        "回到上次文件打开所在行
-        au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$")
-                \| exe "normal g'\"" | endif
-        "自动检测文件类型，并载入相关的规则文件
-            filetype plugin on
-            filetype indent on
+set smartcase
+" tab completion for files/buffers
+set wildmode=longest,list
+set wildmenu
+set mouse+=a " enable mouse mode (scrolling, selection, etc)
+if &term =~ '^screen'
+    " tmux knows the extended mouse mode
+    set ttymouse=xterm2
 endif
 
-autocmd FileType php call PHPFuncList()
-function PHPFuncList()
-    set dictionary=/Users/zhangshaomin/repo/swoole-ide-helper/Swoole.php
-    set dictionary=/Users/zhangshaomin/repo/php/functions.txt
-    set complete-=k complete+=k
+"--------------------
+"" Misc configurations
+"--------------------
+" unbind keys
+map <C-a> <Nop>
+map <C-x> <Nop>
+nmap Q <Nop>
+
+" disable audible bell
+set noerrorbells visualbell t_vb=
+
+" open new split panes to right and bottom, which feels more natural
+set splitbelow
+set splitright
+
+" quicker window movement
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-h> <C-w>h
+nnoremap <C-l> <C-w>l
+
+
+" movement relative to display lines
+" Mac's Leader key is '\'
+nnoremap <silent> <Leader>d :call ToggleMovementByDisplayLines()<CR>
+function SetMovementByDisplayLines()
+    noremap <buffer> <silent> <expr> k v:count ? 'k' : 'gk'
+    noremap <buffer> <silent> <expr> j v:count ? 'j' : 'gj'
+    noremap <buffer> <silent> 0 g0
+    noremap <buffer> <silent> $ g$
 endfunction
-"autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
-"autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
-"autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
-"autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
-"autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
-"
+function ToggleMovementByDisplayLines()
+    if !exists('b:movement_by_display_lines')
+        let b:movement_by_display_lines = 0
+    endif
+    if b:movement_by_display_lines
+        let b:movement_by_display_lines = 0
+        silent! nunmap <buffer> k
+        silent! nunmap <buffer> j
+        silent! nunmap <buffer> 0
+        silent! nunmap <buffer> $
+    else
+        let b:movement_by_display_lines = 1
+        call SetMovementByDisplayLines()
+    endif
+endfunction
 
-"""""""""""""""""""""""""""""""""""""""
-"" javascript-libaries-syntax
-"""""""""""""""""""""""""""""""""""""""
-let g:used_javascript_libs = 'jQuery,AngularJs,AngularUI,AngularUI Router'
+" toggle relative numbering
+nnoremap <C-n> :set rnu!<CR>
 
+" save read-only files
+command -nargs=0 Sudow w !sudo tee % >/dev/null
 
-"""""""""""""""""""""""""""""""""""""""
-"" angular.vim
-"""""""""""""""""""""""""""""""""""""""
-"let g:angular_source_directory = '~/code/angular-learning/bower_components/angular'
-"let g:angular_test_directory = 'test'
+"---------------------
+"" Plugin configuration
+"---------------------
 
+" nerdtree
+nnoremap <Leader>n :NERDTreeToggle<CR>
+nnoremap <Leader>f :NERDTreeFind<CR>
 
-"映射缓冲区 快捷键
-map <C-n> <ESC><ESC>:bn<CR>
-"map <C-p> <ESC><ESC>:bp<CR>
+" ctrlp
+nnoremap ; :CtrlPBuffer<CR>
+let g:ctrlp_switch_buffer = 0
+let g:ctrlp_show_hidden = 1
 
+" ag / ack.vim require ack command line
+command -nargs=+ Gag Gcd | Ack! <args>
+nnoremap K :Gag "\b<C-R><C-W>\b"<CR>:cw<CR>
+if executable('ag')
+    let g:ctrlp_user_command = 'ag %s -l --nocolor --hidden -g ""'
+    let g:ackprg = 'ag --vimgrep'
+endif
 
-set completeopt=longest,menu
+" syntastic
+" check program language syntax 
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_wq = 0
+let g:syntastic_mode_map = {
+    \ 'mode': 'passive',
+    \ 'active_filetypes': [],
+    \ 'passive_filetypes': []
+\}
+nnoremap <Leader>s :SyntasticCheck<CR>
+nnoremap <Leader>r :SyntasticReset<CR>
+nnoremap <Leader>i :SyntasticInfo<CR>
+nnoremap <Leader>m :SyntasticToggleMode<CR>
+
+" easymotion
+map <Space> <Plug>(easymotion-prefix)
+
+"---------------------
+"" Local customizations
+"---------------------
+" local customizations in ~/.vimrc_local
+let $LOCALFILE=expand("~/.vimrc_local")
+if filereadable($LOCALFILE)
+    source $LOCALFILE
+endif
+
