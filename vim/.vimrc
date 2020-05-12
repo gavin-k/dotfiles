@@ -41,7 +41,7 @@ filetype plugin indent on " enable file type detection
 set autoindent
 
 "---------------------
-"" Basic editing config
+" Basic editing config
 "---------------------
 set shortmess+=I " disable startup message
 set nu " number lines
@@ -78,7 +78,7 @@ if &term =~ '^screen'
 endif
 
 "--------------------
-"" Misc configurations
+" Misc configurations
 "--------------------
 " unbind keys
 map <C-a> <Nop>
@@ -131,7 +131,7 @@ nnoremap <C-n> :set rnu!<CR>
 command -nargs=0 Sudow w !sudo tee % >/dev/null
 
 "---------------------
-"" Plugin configuration
+" Plugin configuration
 "---------------------
 
 " nerdtree
@@ -169,8 +169,27 @@ nnoremap <Leader>m :SyntasticToggleMode<CR>
 " easymotion
 map <Space> <Plug>(easymotion-prefix)
 
+" markdown Github:tpope/vim-markdown
+let g:markdown_fenced_languages = [
+    \ 'bash=sh',
+    \ 'c',
+    \ 'coffee',
+    \ 'erb=eruby',
+    \ 'javascript',
+    \ 'json',
+    \ 'perl',
+    \ 'python',
+    \ 'ruby',
+    \ 'yaml',
+    \ 'go',
+    \ 'java',
+    \ 'php',
+    \ 'coffee',
+    \]
+let g:markdown_syntax_conceal = 0
+
 "---------------------
-"" Local customizations
+" Local customizations
 "---------------------
 " local customizations in ~/.vimrc_local
 let $LOCALFILE=expand("~/.vimrc_local")
