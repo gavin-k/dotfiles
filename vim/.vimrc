@@ -138,6 +138,10 @@ command -nargs=0 Sudow w !sudo tee % >/dev/null
 nnoremap <Leader>n :NERDTreeToggle<CR>
 nnoremap <Leader>f :NERDTreeFind<CR>
 
+" buffergator
+let g:buffergator_suppress_keymaps = 1
+nnoremap <Leader>b :BuffergatorToggle<CR>
+
 " ctrlp
 nnoremap ; :CtrlPBuffer<CR>
 let g:ctrlp_switch_buffer = 0
@@ -169,6 +173,22 @@ nnoremap <Leader>m :SyntasticToggleMode<CR>
 " easymotion
 map <Space> <Plug>(easymotion-prefix)
 
+" incsearch
+map / <Plug>(incsearch-forward)
+map ? <Plug>(incsearch-backward)
+map g/ <Plug>(incsearch-stay)
+
+" incsearch-easymotion
+map z/ <Plug>(incsearch-easymotion-/)
+map z? <Plug>(incsearch-easymotion-?)
+map zg/ <Plug>(incsearch-easymotion-stay)
+
+" argwrap
+nnoremap <Leader>w :ArgWrap<CR>
+
+" osyo-manga/vim-over
+noremap <Leader>x :OverCommandLine<CR>
+
 " markdown Github:tpope/vim-markdown
 let g:markdown_fenced_languages = [
     \ 'bash=sh',
@@ -184,9 +204,11 @@ let g:markdown_fenced_languages = [
     \ 'go',
     \ 'java',
     \ 'php',
-    \ 'coffee',
     \]
 let g:markdown_syntax_conceal = 0
+
+" fugitive
+set tags^=.git/tags;~
 
 "---------------------
 " Local customizations
