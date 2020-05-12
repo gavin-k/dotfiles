@@ -4,3 +4,6 @@ if has("autocmd")
       au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif                                                        
 endif 
 
+" config <F2> key bind edit vim config
+nnoremap <F2> :e $MYVIMRC<CR>
+
