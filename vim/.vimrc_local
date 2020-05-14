@@ -7,3 +7,5 @@ endif
 " config <F2> key bind edit vim config
 nnoremap <F2> :e $MYVIMRC<CR>
 
+set clipboard=unnamed
+

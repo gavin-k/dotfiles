@@ -2,3 +2,5 @@ tags
 npm-debug.log
 tmux/.tmux
 vim/.vim
+
+**/*.swp
