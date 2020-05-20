@@ -17,3 +17,6 @@ set clipboard=unnamed
 " tagbar github:majutsushi/tagbar
 nmap <F4> :TagbarToggle<CR>
 
+" vim-airline
+let g:airline_theme='light'
+
