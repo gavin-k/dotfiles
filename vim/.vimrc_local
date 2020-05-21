@@ -1,3 +1,13 @@
+" don't create temp files
+set nobackup
+set noswapfile
+
+" auto read file when file changed.
+set autoread
+
+" auto save file.
+set autowrite
+
 " Uncomment the following to have Vim jump to the last position when       
 " reopening a file 
 if has("autocmd")                                                          
