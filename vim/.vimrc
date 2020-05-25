@@ -17,6 +17,7 @@ augroup END
 " but it can be set to force 256 colors
 " set t_Co=256
 if has('gui_running')
+    set transparency=3
     colorscheme solarized
     let g:lightline = {'colorscheme': 'solarized'}
 elseif &t_Co < 256
@@ -35,7 +36,6 @@ else
     " patches
      highlight CursorLineNr cterm=NONE
 endif
-
 
 filetype plugin indent on " enable file type detection
 set autoindent
