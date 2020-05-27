@@ -22,9 +22,19 @@ if has("autocmd")
       au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif                                                        
 endif 
 
+" make it obvious where 80 characters is
+set textwidth=80
+set colorcolumn=+1
+
 " config <F2> key bind edit vim config
 nnoremap <F2> :e $MYVIMRC<CR>
 nnoremap <F3> :source $MYVIMRC<CR>
+
+" get off my lawn
+nnoremap <Left> :echoe "Use h"<CR>
+nnoremap <Right> :echoe "Use l"<CR>
+nnoremap <Up> :echoe "Use k"<CR>
+nnoremap <Down> :echoe "Use j"<CR>
 
 " config vim clipboard same as system
 set clipboard=unnamed
