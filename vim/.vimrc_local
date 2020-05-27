@@ -1,3 +1,5 @@
+" set font-family and size
+set guifont=Consolas:h20
 " don't create temp files
 set nobackup
 set noswapfile
@@ -22,6 +24,7 @@ endif
 
 " config <F2> key bind edit vim config
 nnoremap <F2> :e $MYVIMRC<CR>
+nnoremap <F3> :source $MYVIMRC<CR>
 
 " config vim clipboard same as system
 set clipboard=unnamed
