@@ -210,6 +210,11 @@ let g:markdown_syntax_conceal = 0
 " fugitive
 set tags^=.git/tags;~
 
+" Ultisnips
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+
 "---------------------
 " Local customizations
 "---------------------
