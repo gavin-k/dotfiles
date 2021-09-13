@@ -1,4 +1,8 @@
 set nocompatible " not vi compatible
+"------------------
+" https://github.com/anishathalye/dotfiles/blob/master/vimrc
+" https://missing.csail.mit.edu/2020/editors/
+"------------------
 
 "------------------
 " Syntax and indent
