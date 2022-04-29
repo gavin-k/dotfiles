@@ -16,11 +16,11 @@ set showcmd
 " set default encoding is utf-8
 set encoding=utf-8
 
-" Uncomment the following to have Vim jump to the last position when       
-" reopening a file 
-if has("autocmd")                                                          
-      au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif                                                        
-endif 
+" Uncomment the following to have Vim jump to the last position when
+" reopening a file
+if has("autocmd")
+      au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
+endif
 
 " make it obvious where 80 characters is
 set textwidth=80
@@ -70,11 +70,35 @@ let g:fzf_preview_window = []
 " - down / up / left / right
 let g:fzf_layout = { 'down': '~40%' }
 
-" search project git root 
+" search project git root
 " https://github.com/junegunn/fzf.vim/issues/47#issuecomment-160237795
 function! s:find_git_root()
     return system('git rev-parse --show-toplevel 2> /dev/null')[:-2]
 endfunction
 
 command! ProjectFiles execute 'Files' s:find_git_root()
+
+" Plugin: FZF
+" https://dev.to/iggredible/how-to-search-faster-in-vim-with-fzf-vim-36ko
+nnoremap <silent> <Leader>b :Buffers<CR>
+nnoremap <silent> <C-f> :Files<CR>
+nnoremap <silent> <Leader>f :Rg<CR>
+nnoremap <silent> <Leader>/ :BLines<CR>
+nnoremap <silent> <Leader>' :Marks<CR>
+nnoremap <silent> <Leader>g :Commits<CR>
+nnoremap <silent> <Leader>H :Helptags<CR>
+nnoremap <silent> <Leader>hh :History<CR>
+nnoremap <silent> <Leader>h: :History:<CR>
+nnoremap <silent> <Leader>h/ :History/<CR>
+nnoremap <silent> <Leader>t :Tags<CR>
+nnoremap <silent> <Leader>p :ProjectFiles <CR>
+
+" Plugin: asyncomplete.vim
+" https://github.com/prabirshrestha/asyncomplete.vim
+inoremap <expr> <Tab>   pumvisible() ? "\<C-n>" : "\<Tab>"
+inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
+inoremap <expr> <cr>    pumvisible() ? asyncomplete#close_popup() : "\<cr>"
+
+" auto dark plugins
+" https://github.com/L-TChen/auto-dark-mode.vim/blob/master/plugin/autoDark.vim
 
