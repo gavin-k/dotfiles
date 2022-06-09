@@ -238,5 +238,13 @@ if filereadable($LOCALFILE)
     source $LOCALFILE
 endif
 
+" Add direnv support
+" https://github.com/direnv/direnv/wiki/Vim#direnv-plugin
+if exists("$EXTRA_VIM")
+  for path in split($EXTRA_VIM, ':')
+    exec "source ".path
+  endfor
+endif
+
 " https://stackoverflow.com/questions/2514445/turning-off-auto-indent-when-pasting-text-into-vim
 set pastetoggle=<F3>
