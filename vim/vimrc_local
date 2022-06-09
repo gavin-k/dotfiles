@@ -61,10 +61,10 @@ let g:fzf_preview_window = ['right:50%', 'ctrl-/']
 
 " Preview window on the upper side of the window with 40% height,
 " hidden by default, ctrl-/ to toggle
-let g:fzf_preview_window = ['up:40%:hidden', 'ctrl-/']
+"let g:fzf_preview_window = ['up:40%:hidden', 'ctrl-/']
 
 " Empty value to disable preview window altogether
-let g:fzf_preview_window = []
+"let g:fzf_preview_window = []
 
 " Default fzf layout
 " - down / up / left / right
@@ -95,7 +95,8 @@ nnoremap <silent> <Leader>p :ProjectFiles <CR>
 
 " Plugin: asyncomplete.vim
 " https://github.com/prabirshrestha/asyncomplete.vim
-inoremap <expr> <Tab>   pumvisible() ? "\<C-n>" : "\<Tab>"
+" The <Tab> need comment the 'set tabstop='
+inoremap <expr> <TAB>   pumvisible() ? "\<C-n>" : "\<Tab>"
 inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 inoremap <expr> <cr>    pumvisible() ? asyncomplete#close_popup() : "\<cr>"
 
